@@ -2,16 +2,12 @@
 *:before,
 *:after {
     box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
 }
 
 body {
-    margin: 0;
+    margin: 0 20px;
+    font-family: 'Raleway', sans-serif;
     background-color: rgb(238, 238, 238);
-}
-
-a {
-    text-decoration: none;
 }
 
 h1,
@@ -19,32 +15,45 @@ p {
     margin: 0 0 1em 0;
 }
 
-
-/* make a grid */
-
 .wrapper {
     max-width: 100%;
-    margin: 0px auto;
+    margin: 0;
     display: grid;
-    grid-template-columns: 1fr 3fr;
     grid-gap: 20px;
 }
 
 .wrapper>* {
-    background-color: #fff;
-    color: #000;
-    padding: 20px;
-    font-size: 100%;
+    border-radius: 2px;
+    padding: 10px;
     /* needed for the floated layout*/
     margin-bottom: 10px;
 }
 
-.wrapper .sidebar {
-    margin-left: 5%;
+.header {
+    font-family: 'Pacifico', cursive;
+    font-size: 32px;
+    line-height: 100px;
+    box-shadow: 1px 0 1px #999;
 }
 
-.wrapper .content {
-    margin-right: 2%;
+.sidebar {
+    margin-left: 20px;
+}
+
+.content {
+    margin-right: 20px;
+}
+
+.sidebar,
+.content {
+    background-color: #fff;
+    box-shadow: 1px 1px 1px #999;
+}
+
+.footer {
+    font-size: 12px;
+    line-height: 50px;
+    box-shadow: 0 -1px 1px #999;
 }
 
 .header,
@@ -52,88 +61,52 @@ p {
     background-color: rgb(54, 113, 161);
     color: rgb(255, 200, 60);
     border: 10px solid #fff;
-    grid-column: 1 / -1;
-    text-align: center;
-    clear: both;
 }
 
-.header {
-    font-family: 'Lobster', cursive;
-    font-size: 72px;
-    line-height: 150px;
-    text-shadow: 2px 4px #000;
-    box-shadow: 1px 1px 2px #999;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+@media screen and (min-width: 500px) {
+    .wrapper {
+        margin: 0 auto;
+        grid-template-columns: 1fr 3fr;
+    }
+
+    .header {
+        font-family: 'Pacifico', cursive;
+        font-size: 56px;
+        text-shadow: 2px 2px #000;
+        line-height: 150px;
+    }
+
+    .sidebar {
+        float: left;
+        width: 20%;
+    }
+
+    .content {
+        float: right;
+        width: 75%;
+    }
+
+    .sidebar,
+    .content {
+        box-shadow: 1px 1px 2px #999;
+    }
+
+    .header,
+    .footer {
+        grid-column: 1 / -1;
+        /* needed for the floated layout */
+        clear: both;
+    }
+
+    .footer {
+        font-size: 16px;
+        line-height: 50px;
+    }
 }
-
-.sidebar {
-    float: left;
-    width: 19.1489%;
-    box-shadow: 1px 1px 2px #999;
-    clear: both;
-}
-
-.sidebar>span {
-    font-size: 24px;
-}
-
-.sidebar>ul {
-    list-style-type: none;
-}
-
-.content {
-    float: right;
-    width: 79.7872%;
-    box-shadow: 1px 1px 2px #999;
-}
-
-.footer {
-    color: rgb(255, 200, 60);
-    box-shadow: 1px -1px 2px #999;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-}
-
-.footer>a {
-    color: #fff;
-    font-weight: bold;
-}
-
-.group:before,
-.group:after {
-    content: "";
-    display: table;
-}
-
-.group:after {
-    clear: both;
-}
-
-.group {
-    zoom: 1;
-    /* For IE 6/7 */
-}
-
-
-/* We need to set the widths used on floated items back to auto, and remove the bottom margin as when we have grid we have gaps. */
 
 @supports (display: grid) {
     .wrapper>* {
         width: auto;
         margin: 0;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .header,
-    .sidebar,
-    .content,
-    footer {
-        margin: 1% 0 1% 0%;
-    }
-    .sidebar,
-    .content {
-        width: 100%;
     }
 }

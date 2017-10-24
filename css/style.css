@@ -36,9 +36,17 @@ p {
     box-shadow: 0 1px 1px #999;
 }
 
+#sidebar-toggle {
+    display: none;
+}
 
+.sidebar-menu {
+    display: none;
+}
 
-.sidebar {}
+#sidebar-toggle:checked + .sidebar-menu {
+  display: block;
+}
 
 .sidebar h3 {
     border: 10px solid #444;

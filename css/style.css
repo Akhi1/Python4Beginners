@@ -17,7 +17,6 @@ p {
 
 .wrapper {
     max-width: 100%;
-    margin: 0;
     display: grid;
     grid-gap: 20px;
 }
@@ -32,12 +31,19 @@ p {
 .header {
     font-family: 'Pacifico', cursive;
     font-size: 32px;
+    text-shadow: 2px 2px #000;
     line-height: 100px;
-    box-shadow: 1px 0 1px #999;
+    box-shadow: 0 1px 1px #999;
 }
 
-.sidebar {
-    margin-left: 20px;
+
+
+.sidebar {}
+
+.sidebar h3 {
+    border: 10px solid #444;
+    padding: 5px;
+    margin: 0;
 }
 
 .content {
@@ -63,7 +69,15 @@ p {
     border: 10px solid #fff;
 }
 
-@media screen and (min-width: 500px) {
+@media only screen and (min-width: 480px) and (max-width: 720px) {
+    .header {
+        font-family: 'Pacifico', cursive;
+        font-size: 48px;
+        text-shadow: 4px 4px #000;
+    }
+}
+
+@media only screen and (min-width: 720px) {
     .wrapper {
         margin: 0 auto;
         grid-template-columns: 1fr 3fr;
@@ -71,9 +85,13 @@ p {
 
     .header {
         font-family: 'Pacifico', cursive;
-        font-size: 56px;
-        text-shadow: 2px 2px #000;
-        line-height: 150px;
+        font-size: 72px;
+        text-shadow: 4px 4px #000;
+        line-height: 120px;
+    }
+
+    .header center {
+        padding: 0;
     }
 
     .sidebar {

@@ -38,19 +38,53 @@ p {
 
 
 
-.sidebar {}
+.sidebar {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -20px;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  background-color: rgb(54, 113, 161);
+  border: 10px solid #fff
+}
+
+.floating-button {
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 25px;
+  font-size: 30px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.sidebar .closeBtn {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  font-size: 36px;
+  margin-left: 60px;
+  cursor: pointer;
+}
 
 .sidebar h3 {
-    border: 10px solid #444;
     padding: 5px;
     margin: 0;
+}
+
+.sidebar a {
+  color: #fff;
 }
 
 .content {
     margin-right: 20px;
 }
 
-.sidebar,
 .content {
     background-color: #fff;
     box-shadow: 1px 1px 1px #999;
@@ -93,12 +127,12 @@ p {
     .header center {
         padding: 0;
     }
-
+    /*
     .sidebar {
         float: left;
         width: 20%;
     }
-
+    */
     .content {
         float: right;
         width: 75%;

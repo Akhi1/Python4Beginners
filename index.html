@@ -8,7 +8,35 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <a class="floating-button" onclick="sidebarOpen()">☰</a>
+    <aside class="sidebar">
+        <a class="closeBtn" onclick="sidebarClose()">x</a>
+        <h3><center>Table of Contents</center></h3>
+        <ul>
+            <li><a href="#home">Home</a>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </li>
+            <li><a href="#about">About</a>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </li>
+            <li><a href="#contact">Contact</a>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+    <div class="wrapper mainContent" id="mainContent">
         <header class="header">
             <center>
                 Python4Beginners<br>
@@ -17,32 +45,6 @@
                 <a class="github-button" href="https://github.com/thetechiexyz/Python4Beginners/issues" data-show-count="true" aria-label="Issue thetechiexyz/Python4Beginners on GitHub">Issue</a>
             </center>
         </header>
-        <aside class="sidebar">
-            <h3><center>Table of Contents</center></h3>
-            <ul>
-                <li><a href="#home">Home</a>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </li>
-                <li><a href="#about">About</a>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </li>
-                <li><a href="#contact">Contact</a>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </aside>
         <article class="content">
             <h1>2 column, header and footer</h1>
             <p>This is an example program for python beginner series </p>
@@ -51,9 +53,9 @@
             <center><a href="http://tekkie.tk">Python4Beginners.</a> Copyright © 2017. All rights reserved.</center>
         </footer>
     </div>
-    <script type="text/javascript" href="js/script.js"></script>
     <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

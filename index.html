@@ -1,39 +1,135 @@
 <!DOCTYPE html>
 <html5>
 
-<head>
-    <title>CSS Grids Demo</title>
-    <script async>
-    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
-    </script>
+    <head>
+        <title>CSS Grids Demo</title>
+        <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
 
-    <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script type="text/javascript" href="js/script.js"></script>
-    
-    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
-</head>
-
-<body>
-    <div class="wrapper">
-		<header class="header">Python4Beginners</header>
-		
-		<aside class="sidebar"><span>Table of Contents</span><hr>
-			<ul>
-			    <li><a href="#home">Home</a></li>
-			    <li><a href="#about">About</a></li>
-			    <li><a href="#contact">Contact</a></li>
-			</ul>
-		</aside>
-		
-		<article class="content">
-		<h1>2 column, header and footer</h1>
-		<p>This is an example program for python beginner series </p>
-		</article>
-		
-		<footer class="footer"><a href="http://tekkie.tk" style="text-orientation: none;">Python4Beginners.</a> Copyright © 2017. All rights reserved.</footer>
-	</div>
-</body>
-
+    <body>
+        <div class="wrapper">
+            <header class="header">Python4Beginners</header>
+            <!-- side menu bar -->
+            <aside class="sidebar group"><span>Table of Contents</span>
+                <hr>
+                <ul>
+                    <li><a href="#home">Home</a>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#about">About</a>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contact</a>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#home">Home</a>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#about">About</a>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contact</a>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#home">Home</a>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#about">About</a>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contact</a>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#home">Home</a>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#about">About</a>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contact</a>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#home">Home</a>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#about">About</a>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contact</a>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+            <!-- end side menu bar -->
+            <article class="content">
+                <h1>2 column, header and footer</h1>
+                <p>This is an example program for python beginner series </p>
+            </article>
+            <footer class="footer"><a href="http://tekkie.tk" style="text-orientation: none;">Python4Beginners.</a> Copyright © 2017. All rights reserved.</footer>
+        </div>
+	    
+	<script type="text/javascript" href="js/script.js"></script>
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    </body>
 </html5>

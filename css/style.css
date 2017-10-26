@@ -128,3 +128,8 @@ p {
         margin: 0;
     }
 }
+
+
+.sidebar ul li ul{
+    display: none;
+}

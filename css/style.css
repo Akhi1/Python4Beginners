@@ -117,8 +117,10 @@ p {
     }
 
     .sidebar {
+      font-family: sans-serif;
         float: left;
         width: 20%;
+        color: #b3cce6;
     }
 
     .content {
